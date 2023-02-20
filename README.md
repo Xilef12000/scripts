@@ -1,2 +1,2 @@
 # scripts
-a collection of useful scripts
+a collection of useful shell/bash scripts
