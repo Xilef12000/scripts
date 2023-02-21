@@ -17,6 +17,6 @@ cat <<< '
 [user1]:[passwd1]
 ' > mosquitto/config/password_file
 
-docker run -d -it -p 1883:1883 -p 9001:9001 -v $PWD/mosquitto/config:/mosquitto/config --name mosquitto-mqtt eclipse-mosquitto
+docker run -d -it -p 1883:1883 -p 9001:9001 -v $PWD/mosquitto/config:/mosquitto/config --restart=unless-stopped --name mosquitto-mqtt eclipse-mosquitto
 
 docker attach mosquitto-mqtt

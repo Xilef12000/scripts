@@ -23,7 +23,7 @@ normalisation-pregain = -10
 initial_volume = "30"
 ' > spotifyd/spotifyd.conf
 
-docker run -d --net host --group-add $(getent group audio | cut -d: -f3) --device /dev/snd:/dev/snd -v /usr/share/alsa:/usr/share/alsa -v $PWD/spotifyd/spotifyd.conf:/etc/spotifyd.conf --name spotifyd ggoussard/spotifyd:latest
+docker run -d --net host --group-add $(getent group audio | cut -d: -f3) --device /dev/snd:/dev/snd -v /usr/share/alsa:/usr/share/alsa -v $PWD/spotifyd/spotifyd.conf:/etc/spotifyd.conf --restart=unless-stopped --name spotifyd ggoussard/spotifyd:latest
 
 # i strongly recommend to turn your volume down before use
 alsamixer
