@@ -13,12 +13,10 @@ allow_anonymous false
 password_file /mosquitto/config/password_file
 ' > mosquitto/config/mosquitto.conf
 
-# replace [user] and [passwd]
+# replace [user] and [passwd] # may not working
 cat <<< '
 [user]:[passwd]
 [user1]:[passwd1]
 ' > mosquitto/config/password_file
 
 docker run -d -it -p 1883:1883 -p 9001:9001 -v $PWD/mosquitto/config:/mosquitto/config --restart=unless-stopped --name mosquitto-mqtt eclipse-mosquitto
-
-docker attach mosquitto-mqtt
