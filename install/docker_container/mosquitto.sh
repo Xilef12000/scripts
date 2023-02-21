@@ -1,5 +1,7 @@
 # mosquitto - Docker
 # https://hub.docker.com/_/eclipse-mosquitto
+# http://www.steves-internet-guide.com/mqtt-username-password-example/
+# https://mosquitto.org/documentation/authentication-methods/
 
 mkdir mosquitto
 mkdir mosquitto/config
