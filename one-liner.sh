@@ -7,6 +7,8 @@ $USER	# current user
 alsamixer
 # disk usage
 df -H
+# docker remove unused volumes
+docker volume prune
 # get thermals/temp
 cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'
 # kill task on port
