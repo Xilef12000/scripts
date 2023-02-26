@@ -15,5 +15,10 @@ cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'
 fuser -k [port]/tcp
 # print in DinA4
 lp -o media=a4
+# sensors
+sudo apt-get install lm-sensors -y
+sudo sensors-detect
+sudo service kmod start
+sensors
 # simple python webserver
 python3 -m http.server
