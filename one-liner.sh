@@ -22,3 +22,5 @@ sudo service kmod start
 sensors
 # simple python webserver
 python3 -m http.server
+# traceroute
+sudo apt-get install traceroute
