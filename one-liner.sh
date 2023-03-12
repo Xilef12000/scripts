@@ -11,6 +11,9 @@ df -H
 docker volume prune
 # get thermals/temp
 cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'
+# hollywood
+sudo apt install hollywood
+hollywood
 # kill task on port
 fuser -k [port]/tcp
 # print in DinA4
