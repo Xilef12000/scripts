@@ -3,6 +3,8 @@
 # $ var
 $PWD	# current dir
 $USER	# current user
+# Appimage: mount for inspection
+my.AppImage --appimage-mount
 # change Volume
 alsamixer
 # disk usage
@@ -25,5 +27,7 @@ sudo service kmod start
 sensors
 # simple python webserver
 python3 -m http.server
+# symbolic-link: output path
+readlink -f sym-link.file
 # traceroute
 sudo apt-get install traceroute
