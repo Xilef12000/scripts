@@ -7,6 +7,8 @@ $USER	# current user
 my.AppImage --appimage-mount
 # change Volume
 alsamixer
+# combine multiple PDFs
+pdfunite [in-1.pdf] [in-2.pdf] [in-n.pdf] [out.pdf]
 # disk usage
 df -H
 # docker remove unused volumes
