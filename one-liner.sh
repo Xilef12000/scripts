@@ -29,6 +29,8 @@ sudo service kmod start
 sensors
 # simple python webserver
 python3 -m http.server
+# snap packet grant access to /media or /mnt
+sudo snap connect [snap-packet]:removable-media
 # symbolic-link: output path
 readlink -f sym-link.file
 # traceroute
