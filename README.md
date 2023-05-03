@@ -1,6 +1,7 @@
 # scripts
 a collection of useful shell/bash scripts
 
+## usage
 all scripts should be executed using:
 ```bash
 sh [scriptname]
@@ -9,3 +10,24 @@ or if superuser power needed:
 ```bash
 sudo sh [scriptname]
 ```
+
+## List of scrips:
+- one-liner.sh
+- install:
+    + docker.sh
+    + docker_raspberry.sh
+    + essentials.sh
+    + openvpn.sh
+    + ufw.sh
+    + yt-dlg.sh
+    + docker_container:
+        * mosquitto.sh
+        * node-red.sh
+        * pihole.sh
+        * portainer.sh
+        * spotifyd.sh
+    + other:
+        * map_wacom_to_primary.sh
+        * nautilus_webp_preview.sh
+        * rename_RIFF_jpg_to_webp.sh
+    
