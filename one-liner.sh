@@ -13,6 +13,8 @@ pdfunite [in-1.pdf] [in-2.pdf] [in-n.pdf] [out.pdf]
 df -H
 # docker remove unused volumes
 docker volume prune
+# EUrKEY, change keyboard  layout to EurKEY
+setxkbmap eu
 # get thermals/temp
 cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'
 # hollywood
