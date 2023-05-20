@@ -24,6 +24,9 @@ hollywood
 fuser -k [port]/tcp
 # print in DinA4
 lp -o media=a4
+# QR-Code generation
+sudo apt-get install qrencode
+qrencode -t ANSIUTF8 '[your text]'
 # sensors
 sudo apt-get install lm-sensors -y
 sudo sensors-detect
