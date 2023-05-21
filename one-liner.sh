@@ -22,6 +22,8 @@ sudo apt install hollywood
 hollywood
 # kill task on port
 fuser -k [port]/tcp
+# nginx test server
+sudo docker run --name some-nginx -d -p 8000:80 nginx
 # print in DinA4
 lp -o media=a4
 # QR-Code generation
