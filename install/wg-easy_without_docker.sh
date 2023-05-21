@@ -21,3 +21,4 @@ nano /etc/systemd/system/wg-easy.service # Replace everything that is marked as 
 systemctl daemon-reload
 systemctl enable --now wg-easy.service
 systemctl start wg-easy.service
+systemctl status wg-easy.service
