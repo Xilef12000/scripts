@@ -7,7 +7,7 @@ for f in $FILES
 do
 	if [ $(head -c 4 $f) = "RIFF" ]
 	then
-		#echo $f
+		echo $f
 		#head -c 4 $f
 		mv -- "$f" "${f%.jpg}.webp"
 	fi
