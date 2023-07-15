@@ -17,6 +17,7 @@ docker volume prune
 setxkbmap eu
 # get thermals/temp
 cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'
+watch "cat /sys/class/thermal/thermal_zone*/temp | sed 's/\(.\)..$/.\1°C/'"
 # hollywood
 sudo apt install hollywood
 hollywood
