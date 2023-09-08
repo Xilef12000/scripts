@@ -5,12 +5,18 @@ a collection of useful shell/bash scripts (and some other scipts)
 all shell/bash scripts should be executed using:
 ```bash
 sh [scriptname]
-```
+```  
 or if superuser power needed:
 ```bash
 sudo sh [scriptname]
-```
-
+```  
+## clone repo to new mashine:
+```bash
+wget https://raw.githubusercontent.com/Xilef12000/scripts/main/install/essentials.sh
+sudo sh essentials.sh
+git clone https://github.com/Xilef12000/scripts.git
+rm essentials.sh
+```  
 ## List of scrips:
 - one-liner.sh
 - install:
