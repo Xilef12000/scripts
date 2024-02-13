@@ -16,6 +16,7 @@ sudo reboot
 
 docker version
 docker run hello-world
+docker container prune -f
 
 # install docker-compose
 sudo apt install docker-compose -y

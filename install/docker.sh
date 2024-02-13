@@ -29,6 +29,7 @@ newgrp docker
 docker version
 docker-compose version
 docker run hello-world
+docker container prune -f
 
 # autostart docker
 sudo systemctl enable docker.service
